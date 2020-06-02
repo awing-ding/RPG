@@ -1,4 +1,11 @@
-﻿# Créé par Perso, le 02/06/2020 en Python 3.4
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jun  2 19:07:09 2020
+
+@author: Antoine
+"""
+
+# Créé par Perso, le 02/06/2020 en Python 3.4
 from random import*
 def foret():
     print("t'es dans la foret")
@@ -19,15 +26,22 @@ def grotte():
     print("t'es dans la grotte")
 
 
-deplacement = input("veux tu aller vers: la foret, le village, la grotte, les montagnes, le lac ?")
-if deplacement== "foret":
-    zone= foret()
-elif deplacement== "grotte":
-    zone= grotte()
-elif deplacement== "montagnes":
-    zone= montagnes()
-elif deplacement== "village":
-    zone= village()
-elif deplacement== "lac":
-    zone= lac()
+verification = False
+while verification != True :
+  deplacement= input("veux tu aller vers: la foret, le village, la grotte, les montagnes, le lac ?")
+  if deplacement== "foret":
+       zone= foret()
+       verification = True
+  elif deplacement == "grotte":
+       zone = grotte()
+       verification = True
+  elif deplacement == "montagnes":
+       zone = montagnes()
+       verification = True
+  elif deplacement == "village":
+       zone= village()
+       verification = True
+  elif deplacement== "lac":
+       zone= lac()
+       verification = True
 
