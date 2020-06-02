@@ -6,7 +6,7 @@ Created on Tue Jun  2 19:07:09 2020
 """
 
 # Créé par Perso, le 02/06/2020 en Python 3.4
-from random import*
+import random
 def foret():
     print("t'es dans la foret")
 
@@ -30,18 +30,24 @@ verification = False
 while verification != True :
   deplacement= input("veux tu aller vers: la foret, le village, la grotte, les montagnes, le lac ?")
   if deplacement== "foret":
-       zone= foret()
+       zone = "foret"
+       foret()
        verification = True
   elif deplacement == "grotte":
-       zone = grotte()
+       zone = "grotte"
+       grotte()
        verification = True
   elif deplacement == "montagnes":
-       zone = montagnes()
+       zone = "montagnes"
+       montagnes()
        verification = True
   elif deplacement == "village":
-       zone= village()
+       zone = "village"
+       village()
        verification = True
   elif deplacement== "lac":
-       zone= lac()
+       zone = "lac"
+       lac()
+
        verification = True
 
