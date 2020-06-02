@@ -18,17 +18,6 @@ def village():
 def grotte():
     print("t'es dans la grotte")
 
-direction=randint(1,5)
-if direction==1:
-    zone= foret()
-elif direction==2:
-    zone= grotte()
-elif direction==3:
-    zone= village()
-elif direction==4:
-    zone= montagnes()
-elif direction==5:
-    zone= lac()
 
 deplacement = input("veux tu aller vers: la foret, le village, la grotte, les montagnes, le lac ?")
 if deplacement== "foret":
