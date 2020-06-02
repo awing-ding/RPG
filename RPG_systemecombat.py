@@ -1,4 +1,4 @@
-from random import*
+from random import randint
 def stat_mob(level):
     if level <= 5:
         stat__mob = [randint(2,5),randint(5,8),randint(1,5)]
