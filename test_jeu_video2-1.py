@@ -90,7 +90,7 @@ def montagnes():
 
 def village():
     print("t'es au village")
-    deplacementvillage= str(input("veux tu aller vers: la forge, la bibliotheque ?"))
+    deplacementvillage= str(input("veux tu aller vers: la forge ou la bibliotheque ?         "))
     if deplacementvillage== "forge":
         zone= forge()
     elif deplacementvillage== "bibliotheque":
@@ -112,7 +112,7 @@ def grotte():
 
 verification = False
 while verification != True :
-  deplacement= str(input("veux tu aller vers: la foret, le village, la grotte, les montagnes, le lac ?"))
+  deplacement= str(input("veux tu aller vers: la foret, le village, la grotte, les montagnes ou le lac ?        "))
   if deplacement== "foret":
        zone= foret()
        verification = True
