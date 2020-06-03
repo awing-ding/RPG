@@ -1,12 +1,5 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jun  2 19:07:09 2020
-
-@author: Antoine
-"""
-
-# Créé par Perso, le 02/06/2020 en Python 3.4
-import random
+﻿# Créé par Perso, le 02/06/2020 en Python 3.4
+from random import*
 def foret():
     print("t'es dans la foret")
 
@@ -25,29 +18,27 @@ def village():
 def grotte():
     print("t'es dans la grotte")
 
+direction=randint(1,5)
+if direction==1:
+    zone= foret()
+elif direction==2:
+    zone= grotte()
+elif direction==3:
+    zone= village()
+elif direction==4:
+    zone= montagnes()
+elif direction==5:
+    zone= lac()
 
-verification = False
-while verification != True :
-  deplacement= input("veux tu aller vers: la foret, le village, la grotte, les montagnes, le lac ?")
-  if deplacement== "foret":
-       zone = "foret"
-       foret()
-       verification = True
-  elif deplacement == "grotte":
-       zone = "grotte"
-       grotte()
-       verification = True
-  elif deplacement == "montagnes":
-       zone = "montagnes"
-       montagnes()
-       verification = True
-  elif deplacement == "village":
-       zone = "village"
-       village()
-       verification = True
-  elif deplacement== "lac":
-       zone = "lac"
-       lac()
-
-       verification = True
+deplacement = input("veux tu aller vers: la foret, le village, la grotte, les montagnes, le lac ?")
+if deplacement== "foret":
+    zone= foret()
+elif deplacement== "grotte":
+    zone= grotte()
+elif deplacement== "montagnes":
+    zone= montagnes()
+elif deplacement== "village":
+    zone= village()
+elif deplacement== "lac":
+    zone= lac()
 
